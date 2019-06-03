@@ -1,0 +1,333 @@
+/* Banner */
+
+.banner {
+  height: 252px;
+  background-color: rgba(0,0,0,.3);
+  color: #fff;
+  text-transform: uppercase;  
+}
+
+.banner h1 {
+  margin: 80px 0 20px;
+}
+
+.banner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 252px;
+  opacity: 0.8;
+  z-index: -2;
+  background: url(../img/banner1.jpg) center 0/ cover no-repeat;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 956px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+
+/* Main */
+
+main {
+  box-sizing: border-box;
+  width: auto;
+  margin: auto;
+  max-width: 1020px;
+  padding: 96px 32px;
+}
+
+.side-panel {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 26.5625%;
+  width: calc(255px - 0%);
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 64px;
+  border: 0;
+  text-align: initial;
+}
+
+.side-panel h3 {
+  font-family: 'ProximaNovaBold';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  color: rgba(26,26,26,.9);
+}
+
+.action-btn {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  padding: 21px 34px;
+  letter-spacing: 1px;
+}
+
+
+/* Activity details */
+
+.content {
+  width: calc(100% - 255px);
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+}
+
+.content h3 {
+  text-align: left;
+}
+
+
+/* Beneficiary */
+.beneficiary h2 {
+  margin: 0 0 50px;
+  text-align: left;
+}
+
+.content a {
+  color: #b0bf3c;
+  text-decoration: none;
+}
+
+.inner-padding {
+  margin: 0 auto;
+  display: flex;
+  padding: 60px 110px;
+  justify-content: center;
+}
+
+.inner-padding a {
+  display: block;
+  margin: 15px 0;
+}
+
+
+/* Gallery */
+.img-wrapper {
+  width: 267px;
+  height: 200px;
+  overflow: hidden;
+  margin: 1em;
+  display: inline-block;
+}
+
+.activity-photo {
+  cursor: pointer;
+  width: 267px;
+  height: auto;
+}
+
+/* for vertical pictures */
+.centered-photo {
+  position: relative;
+  top: -50%;
+}
+
+
+/* Budget */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 28px 0;
+}
+
+tbody {
+  color: rgba(26,26,26,.9);
+}
+
+table td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){
+  background-color: #f2f2f2;;
+}
+
+tr:hover {
+  background-color: #ddd !important;
+}
+
+th {
+  padding: 12px 0;
+  text-align: left;
+  background-color: #b0bf3c;
+  color: #fff;
+}
+
+
+/* Form */
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #b0bf3c;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 21px 34px;
+  letter-spacing: 1px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-form .container {
+  font: normal 400 18px/1.6em adobe-garamond-pro;
+  color: rgba(26,26,26,.9);
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: initial;
+}
+
+
+/* modal with enlarged pictures */
+
+#photo-modal-root {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  overflow-y: hidden;
+}
+
+.photo-modal {
+  margin: auto;
+  width: 80%;
+  max-width: 930px;
+  padding: 10px;
+  max-height: 97vh;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-modal-img {
+  max-width: inherit;
+  display: inline-block;
+  max-height: inherit;
+}
+
+#close-photo-modal-btn {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 15vw;
+}
+
+.arrow {
+  color: #fff;
+  align-self: center;
+}
+
+#arrow-right {
+  margin-left: auto;
+}
+#arrow-left {
+  margin-right: auto;
+}
+
+
+/* Media queries */
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically. Source: https://css-tricks.com/responsive-data-tables/
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to display as block */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  table td, th {
+    padding: 3px;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none !important;
+    border-bottom: 1px solid #eee !important; 
+    position: relative;
+    padding-left: 50% !important;
+  }
+
+  tr:nth-of-type(even) td {
+    border-bottom: 1px solid #fff !important;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+   Label the data
+  */
+  td:nth-of-type(1):before { content: "Capitol buget"; }
+  td:nth-of-type(2):before { content: "Buc."; }
+  td:nth-of-type(3):before { content: "Buget unitar (EUR)"; }
+  td:nth-of-type(4):before { content: "Buget total(EUR)"; }
+  td:nth-of-type(5):before { content: "Altele"; }
+  tr:last-child td:before { content: "Total (EUR)"; }
+  td:nth-last-child(2) { display: none; }
+}
+
+@media screen and (max-width: 650px) {
+
+  .side-panel {
+    display: none;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+  }
+}

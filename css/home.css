@@ -1,0 +1,376 @@
+/* HERO */
+
+#hero {
+  padding-bottom: 17px;
+}
+
+.hero {
+  height: 630px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(0,0,0,.3);
+}
+
+.hero::before {
+  background: url(../img/hero.jpg) center 0/cover no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.8;
+  width: 100%;
+  height: 630px;
+}
+
+.hero-message {
+  position: relative;
+  align-self: center;
+  width: 100%;
+  padding-top: 110px;
+}
+
+.h1 {
+  margin: 3% 0;
+}
+
+.h1-span {
+  margin: 20px auto;
+}
+
+.hero .caption {
+  position: absolute;
+  max-width: 550px;
+  margin-left: 80px;
+  top: 80%;
+  transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+}
+
+/*Buttons*/
+
+.action-call {
+  background-color: #b0bf3c;
+  border: 0;
+  margin: 40px 10px 10px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  margin: 40px 10px 10px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #b0bf3c;
+  border-color: #b0bf3c;
+}
+
+.action-call:hover,
+.action-call:focus {
+  background-color: rgba(176,191,60,.8);
+}
+
+/* Intro */
+
+.intro-caption {
+  margin: 0 auto;
+  padding: 17px 0;
+  max-width: 869px;
+  min-width: 370px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #142618;
+}
+
+.intro-caption p {
+  margin: 0;
+  padding: 17px;
+}
+
+
+/* MISSION */
+
+.mission {
+  height: 500px;
+  height: max-content;
+  padding: 17px 0;
+}
+
+.mission-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 17px 0;
+}
+
+.mission-item {
+  width: 391px;
+  min-height: 290px;
+  padding: 17px 1em;
+}
+
+.mission h3 {
+  padding: 17px 0;
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.mission-item img {
+  width: 55px;
+  filter: invert(30%);
+}
+
+.mission-item p {
+  width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+
+/* ACTIVITIES */
+
+.activities {
+  height: max-content;
+  color: #fff;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  padding: 17px 0;
+}
+
+.activity-item {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 1em;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  width: 275px;
+  height: 225px;
+}
+
+.img-cleaning {
+  background: url(../img/corporate-003.jpg) 0 -50px/cover no-repeat;
+}
+
+.img-training {
+  background: url(../img/corporate-005.jpg) 0 0/cover no-repeat;
+}
+
+.img-teambuilding {
+  background: url(../img/corporate-004.jpg) 0 0/cover no-repeat;
+}
+
+.img-speeches {
+  background: url(../img/Corporate-002.jpg) 0 0/cover no-repeat;
+}
+
+.activity-item i {
+  font-size: 80px;
+  color: transparent;
+  transition: 0.5s;
+  padding: 72.5px 0;
+}
+
+.activity-item:hover i {
+  color: #fff !important;
+}
+
+.activity-item h3 {
+  text-transform: uppercase;
+  color: #4a4a4a;
+  height: 52.8px;
+  margin-bottom: 0;
+  font: normal 400 22px/1.2em proxima-nova;
+  letter-spacing: 2px;
+}
+
+.activity-item p {
+  flex-grow: 1;
+}
+
+.activity-btn {
+  margin: 0 !important;
+  border-radius: 2px !important;
+  background-color: #b0bf3c;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.text-green {
+  color: #b0bf3c;
+}
+
+
+/* IMPACT */
+
+.impact {
+  background: url("https://www.letsdoitromania.ro/wp-content/uploads/2018/04/letsdoitro-21.jpg?id=15371") 0/cover no-repeat;
+  min-height: 250px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.impact div {
+  padding: 5px 40px;
+}
+
+.impact p {
+  font-family: ProximaNovaBold;
+  color: #fff;
+  font-size: 22px;
+}
+
+.impact hr {
+  color: inherit;
+  border-color: #fff;
+  width: 50px;
+}
+
+
+/* SUPPORT */
+
+.hide-overflow {
+  overflow: hidden;
+  width: 100%;
+  max-width: 956px;
+  min-height: 78px;
+  max-height: 228px;
+  height: 22vw;
+  margin: 0 auto;
+}
+
+.support img {
+  width: 100%;
+  position: relative;
+  /* top: -133px; */
+  top: -10vw;
+}
+
+.support p {
+  padding: 17px 0;
+}
+
+
+/* PARTNERS */
+
+.partners-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 17px 0;
+}
+
+.partners-list li {
+  padding: 0 5px;
+}
+
+.partner-logo {
+  width: 150px;
+}
+
+.partners h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* Newsletter */
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  height: 109px;
+  color: rgba(255,255,255,.9);
+
+}
+
+.newsletter h3 {
+  color: #fff;
+  width: 200px;
+  text-transform: unset;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: space-around;
+  /* width: 80%; */
+  /* margin: auto; */
+  width: 100%;
+  padding: 0 5vw;
+  align-items: center;
+}
+
+.newsletter-email {
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  font: bold 13px/49px "proxima-nova-soft",sans-serif;
+  letter-spacing: .22em;
+  text-align: center;
+  text-transform: uppercase;
+  height: 43px;
+  color: inherit;
+  margin: 0 5px;
+}
+
+.newsletter-button {
+  margin: 0 !important;
+  background-color: transparent;
+  transform: translate3d(0,0,0);
+  transition: color .3s,background 0s;
+  flex-shrink: 0;
+  height: 59.5px;
+}
+
+.newsletter-button:hover {
+  transition: background .3s .2s,color .3s;
+  background-color: #e3e2db;
+  color: #142618;
+}
+
+
+/*Media queries*/
+
+
+@media screen and (min-width: 1011px)and (max-width: 1349px) {
+
+  .impact p {
+    font-size: 30px;
+  }
+
+  .counter {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1349px) {
+
+  .impact p {
+    font-size: 40px;
+  }
+}
